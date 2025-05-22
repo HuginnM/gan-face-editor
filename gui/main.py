@@ -1,4 +1,4 @@
-import PySimpleGUI as sg
+import FreeSimpleGUI as sg
 from settings import Config
 from controller import Controller
 from .layouts.interface import main_layout

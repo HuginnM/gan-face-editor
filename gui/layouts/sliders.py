@@ -1,4 +1,4 @@
-import PySimpleGUI as sg
+import FreeSimpleGUI as sg
 from settings import Config
 sg.theme(Config.gui.theme_name)
 

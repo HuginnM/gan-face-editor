@@ -1,0 +1,80 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# PyTorch Lightning / TensorBoard
+lightning_logs/
+logs/
+*.ckpt
+*.pth
+*.pt
+*.log
+
+# VS Code and IDEs
+.vscode/
+.idea/
+*.swp
+
+# Environment files
+.env
+.env.*
+
+# Test cache
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Ruff / MyPy / Pylint / coverage
+.mypy_cache/
+.cache/
+.pyre/
+.ruff_cache
+
+# Packaging
+build/
+dist/
+*.egg-info/
+
+# Data & Logs
+data/images/*
+data/masks/*
+data/*
+!data/images/.gitkeep
+!data/masks/.gitkeep
+wandb/
+artifacts/
+mlruns/
+mlartifacts/
+*.csv
+*.h5
+*.npz
+*.npy
+
+# Experiments
+experiments/*
+!experiments/.gitkeep
+
+# DVC
+.dvc/
+.dvcignore
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# PyInstaller
+*.spec
+
+# Test notebooks
+notebooks/
+*.ipynb

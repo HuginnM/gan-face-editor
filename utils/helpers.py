@@ -45,17 +45,10 @@ def convert_image(image, size):
     Returns:
     PIL.Image: A postprocessed image in shape [H, W, N] in range [0, 255] (dtype=uint8).
     """
-    # Change the image shape from [N, H, W] to [H, W, N]
     image = image.permute(1, 2, 0)
-    
-    # Rescale the pixel values from [-1, 1] to [0, 255]
     image = (image + 1) * 127.5
     image = image.clamp(0, 255).to(torch.uint8).cpu().numpy()
-    
-    # Convert the NumPy array to a PIL Image
     image = Image.fromarray(image, 'RGB')
-    
-    # Resize the image to the specified size
     image = image.resize(size)
     
     return image

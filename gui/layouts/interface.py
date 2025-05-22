@@ -1,4 +1,4 @@
-import PySimpleGUI as sg
+import FreeSimpleGUI as sg
 from settings import Config
 from .sliders import sliders
 sg.theme(Config.gui.theme_name)
