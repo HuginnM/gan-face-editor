@@ -49,11 +49,11 @@ Project real images into the StyleGAN latent space and modify them:
 ![Projection Process](assets/harry_potter_projection.png)
 
 #### Understanding Projection Limitations
-When projecting a real image into StyleGAN2-ADA’s latent space, the result is not a pixel-perfect match. Instead, the goal is to find a latent vector `w ∈ W+` such that the generated image `G(w)` closely resembles the original in a perceptual sense.
+When projecting a real image into StyleGAN2-ADA's latent space, the result is not a pixel-perfect match. Instead, the goal is to find a latent vector `w ∈ W+` such that the generated image `G(w)` closely resembles the original in a perceptual sense.
 
 #### Why Differences Occur
 
-- **Latent Space Limits**: StyleGAN’s latent space, trained on datasets like FFHQ, can only express faces within its learned distribution. Unusual features may not be fully captured.
+- **Latent Space Limits**: StyleGAN's latent space, trained on datasets like FFHQ, can only express faces within its learned distribution. Unusual features may not be fully captured.
 
 - **Optimization Trade-offs**: The projection minimizes a loss combining perceptual similarity (`LPIPS`), pixel difference (`L2`), and regularization toward the average latent (`‖w − w_avg‖²`). This balances realism with accuracy.
 
@@ -155,7 +155,7 @@ GAN-Face-Editor/
 - VGG16
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 - StyleGAN2-ADA by NVIDIA
