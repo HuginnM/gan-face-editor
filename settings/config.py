@@ -22,8 +22,8 @@ class Shifting:
 
 
 class GUIConfig:
-    theme_name = "DarkTeal9"
-    display_size = (400, 400)
+    theme_name = "DarkAmber"
+    display_size = (300, 300)
     shift_range = (-10, 10)
     vector_names = (
         "age",
