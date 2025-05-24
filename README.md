@@ -2,11 +2,7 @@
 
 A powerful desktop application for generating and editing realistic human faces using StyleGAN2-ADA. This project demonstrates the practical application of Generative Adversarial Networks (GANs) for face manipulation and generation.
 
-<table>
-<tr>
-<td><img src="assets/Initial_window.png" width="300"></td>
-</tr>
-</table>
+<p align="center"><img src="assets/Initial_window.png" width=70%></p>
 
 ## Features
 
@@ -25,35 +21,32 @@ Generate unique, realistic faces using different methods:
 - Z-vector based generation
 - W-vector based generation
 
-<table>
-<tr>
-<td><img src="assets/Enter_seed_num.png" width="300"></td>
-</tr>
-</table>
+<p align="center"><img src="assets/Enter_seed_num.png" width=70%></p>
 
 ### Face Editing
 Modify various facial attributes with precise control:
 
 #### Age Transformation
-<table>
+<table style="width:100%; table-layout:fixed;">
 <tr>
-<td><img src="assets/younger_demo.png" width="300"></td>
-<td><img src="assets/older_demo.png" width="300"></td>
+<td><img src="assets/younger_demo.png" width=100%></td>
+<td><img src="assets/older_demo.png" width=100%></td>
 </tr>
 </table>
 
 #### Gender Transformation
-<table>
+<table style="width:100%; table-layout:fixed;">
 <tr>
-<td><img src="assets/feminine_demo.png" width="300"></td>
-<td><img src="assets/more_masculine.png" width="300"></td>
+<td><img src="assets/feminine_demo.png" width=100%></td>
+<td><img src="assets/more_masculine.png" width=100%></td>
 </tr>
 </table>
 
 #### Expression and Pose
-<table>
+<table style="width:100%; table-layout:fixed;">
 <tr>
-<td><img src="assets/smile_demo.png" width="300"></td>
+<td><img src="assets/smile_demo.png" width=100%></td>
+<td><img src="assets/yaw_demo.png" width=100%></td>
 </tr>
 </table>
 
@@ -61,25 +54,17 @@ Modify various facial attributes with precise control:
 Project real images into the StyleGAN latent space and modify them:
 
 #### Projection Process
-<table>
-<tr>
-<td><img src="assets/harry_potter_projection.png" width="300"></td>
-</tr>
-</table>
+<p align="center"><img src="assets/harry_potter_projection.png" width=70%></p>
 
-#### Projection Video
-The following video shows the optimization process of projecting a real image into the StyleGAN latent space:
+#### Projection GIF
+The following animation shows the optimization process of projecting a real image into the StyleGAN latent space:
 
-https://user-images.githubusercontent.com/HuginnM/gan-face-editor/main/assets/proj.mp4
+<p align="center"><img src="assets/harry_projection.gif" width=70%></p>
 
 #### Post-Projection Editing
 After successful projection, we can modify the projected image:
 
-<table>
-<tr>
-<td><img src="assets/harry_potter_older_smiling.png" width="300"></td>
-</tr>
-</table>
+<p align="center"><img src="assets/harry_potter_older_smiling.png" width=70%></p>
 
 #### Saving and Reusing Projected Vectors
 When you project an image, the application automatically saves:
