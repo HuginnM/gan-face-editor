@@ -46,7 +46,12 @@ dist/
 *.egg-info/
 
 # Data & Logs
-data/images/*
+generated/
+input_imags/
+models/
+*.csv
+*.h5
+*.npzdata/images/*
 data/masks/*
 data/*
 !data/images/.gitkeep
@@ -55,13 +60,7 @@ wandb/
 artifacts/
 mlruns/
 mlartifacts/
-*.csv
-*.h5
-*.npz
-*.npy
 
-# Experiments
-experiments/*
 !experiments/.gitkeep
 
 # DVC
